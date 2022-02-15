@@ -12,7 +12,10 @@
     var requestOptions = {
         method: 'GET',
         redirect: 'follow',
-        mode: 'cors'
+        mode: 'cors',
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
       };
       
       fetch("https://fantasy.premierleague.com/api/bootstrap-static/", requestOptions)
