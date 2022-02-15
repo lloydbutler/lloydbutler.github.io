@@ -17,16 +17,6 @@
         console.log('parsing failed', ex)
     });
     
-    var requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-        mode: 'cors',
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Content-Type, X-Auth-Token, Authorization, Origin',
-            'Access-Control-Allow-Mthods': 'POST, PUT, GET'
-        }
-      };
       
       fetch("https://fantasy.premierleague.com/api/bootstrap-static/")
         .then(response => response.text())
