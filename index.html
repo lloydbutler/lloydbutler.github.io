@@ -9,6 +9,14 @@
 
 <script>
     
+    fetch('https://fantasy.premierleague.com/api/bootstrap-static/').then(function(response) {
+        return response.json()
+    }).then(function(json) {
+        console.log('parsed json', json)
+    }).catch(function(ex) {
+        console.log('parsing failed', ex)
+    });
+    
     var requestOptions = {
         method: 'GET',
         redirect: 'follow',
